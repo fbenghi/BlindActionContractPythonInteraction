@@ -58,6 +58,21 @@ contract BlindAuction {
         }));
     }
 
+    function testHash(
+        uint _value,
+        bool _fake,
+        bytes32 _secret,
+        bytes32 _toValidate
+    )
+        pure public returns (bytes32)
+    {
+        //bytes32 test = keccak256(abi.encodePacked(_value, _fake, _secret));
+        //require(_toValidate == test);
+        
+        return keccak256(abi.encodePacked(_value, _fake, _secret));
+    }
+
+
     /// Reveal your blinded bids. You will get a refund for all
     /// correctly blinded invalid bids and for all bids except for
     /// the totally highest.

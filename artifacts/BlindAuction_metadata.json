@@ -217,6 +217,32 @@
 				"type": "function"
 			},
 			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_fake",
+						"type": "bool"
+					}
+				],
+				"name": "testHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"constant": false,
 				"inputs": [],
 				"name": "withdraw",
@@ -260,10 +286,10 @@
 	},
 	"sources": {
 		"browser/contracts/BlindAuction.sol": {
-			"keccak256": "0x60cd17281915ae953615704d8e419fe03eaad7ec1e3f266d2a7167eed36ddd29",
+			"keccak256": "0xbb174608265a5ce6e38c2905540a2ec4da157ee754cc62097c474aee9e60bbdb",
 			"urls": [
-				"bzz-raw://dc49c59ed45da7d49e79002b450cea069221e33ef3fc9335057aa9f67c7f6cb8",
-				"dweb:/ipfs/QmVKLTiMqxSXe3mrN8J7Gc1oB4JtxtV5azjTpZHFJ4QqEQ"
+				"bzz-raw://a1d8e4c0d774ca816da8900122c06925e2c672b6d4a92377619c6cc278b17706",
+				"dweb:/ipfs/QmTX8n75VeW2P3dfZAcbkSuTRAqELrJUpN5TGcVFr64mYA"
 			]
 		}
 	},
